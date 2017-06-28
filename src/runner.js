@@ -395,7 +395,7 @@ Runner.prototype.test = function test (log) {
 Runner.prototype.spawn = function spawnChild (tasks) {
     // Spawn the child.
     var child = spawn(
-        path.join(__dirname, '../node_modules/casperjs/bin/casperjs'),
+        path.join(__dirname, '../../casperjs/bin/casperjs'),
         [
             path.join(__dirname, './bots/worker.js'),
             '--tasks=' + tasks,
